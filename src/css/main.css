@@ -1,0 +1,126 @@
+/* General CSS */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+a {
+    color: #CE5752;
+}
+body {
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+header p {
+    font-size: 17px;
+    margin: 5px 0 10px 0;
+}
+header .logo img{
+    margin-top: 20px;
+}
+
+/* Navigation */
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-header {
+    background: #ff899d;
+}
+nav.navbar-default {
+    border: 0;
+    background: none;
+}
+nav.navbar-default .navbar-nav li a {
+    color: #f84660
+}
+nav.navbar-default .navbar-nav li a:hover {
+    color: #2d3c49;
+}
+
+/* Content */
+h3 {
+    color: #7d97ad;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 38px;
+}
+.hero {
+    font-size: 16px;
+}
+.hero img {
+    position: relative;
+}
+.intro {
+    margin-top: 20px;
+}
+.intro p {
+    font-size: 16px;
+}
+
+/*
+.intro {
+    padding: 40px;
+    line-height: 2em;
+    position: absolute;
+    top: 361px;
+    right: 275px;
+    width: 420px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}*/
+
+
+/* featured Work */
+.featured {
+   /* background-color:#EFECE8;*/
+}
+.featured-work {
+    text-align:center;
+    padding-bottom: 30px;
+}
+.featured-work h4 {
+    text-transform: uppercase;
+    font-size: 30px
+}
+.featured-work .item {
+
+}
+.featured-work .item p {
+    margin-bottom: 0;
+}
+
+/* footer */
+footer {
+    background-color: #CE5752;
+    padding-bottom: 30px;
+    text-align:center;
+}
+footer h3 {
+    padding-bottom: 30px;
+    color: #BBACA6;
+}
+footer a {
+        color: #fff;
+}
+footer a:hover {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 500px) {
+    Body {
+        Background: red
+        }
+}
