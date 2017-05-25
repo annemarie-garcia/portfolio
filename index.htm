@@ -1,96 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Anne-Marie Garcia - Portfolio Site</title>
+        <title>Anne-Marie Garcia - Portfolio</title>
 
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="src/css/main.css">
+        <link rel="stylesheet" type="text/css" href="src/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
     </head>
 
-
     <body>
-        <div class="container">
+        <header class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-            <header class="row">
-                <div class="col-xs-2"><img src="https://unsplash.it/100/100" class="img-responsive"></div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#featured">Featured Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-2 logo">
+                     <a href="index.htm"><img src="src/images/logo3.svg" class="img-responsive"></a>
+                </div>
                 <div class="col-xs-10 text-right">
                   <h1>Anne-Marie Garcia</h1>
-                  <h3>Front-end Ninja</h3>
+                  <p>Front-End Developer</p>
                 </div>
-                <div class="col-md-12">
-                  <hr>
-                </div>
-            </header>
+            </div>
+        </header>
 
+        <div class="container-fluid hero">
             <div class="row">
-              <div class="col-md-8">
-                <img src="https://unsplash.it/1140/350" class="img-responsive">
-              </div>
-              <div class="col-md-4 intro">
-                <p>I’m Anne-Marie, based In Reading, UK. I’m currently studying a <a href="https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004">Full Stack Web Developer Nanodegree at Udacity</a>.</p>
-
-                <p>I’m looking for new work opportunities based in Berkshire and Thames Valley.</p>
-
-
-               <button class="btn btn-default" type="submit">More About Me</button>
-              </div>
-
+                <img src="dist/images/amg-main-400.jpg" class="img-responsive" alt="Profile of Anne-Marie Garcia">
             </div>
-
+        </div>
+        <div class="container intro">
             <div class="row">
-                <div class="col-md-12">
-                  <h2>Featured Work</h2>
-                </div>
-            </div>
-            <div class="row featured-work">
-              <div class="col-md-4">
-                <a href="#" class="thumbnail"><img src="https://unsplash.it/555/300" data-toggle="modal" data-target="#project1"></a>
-                <h3>Movie Trailer Website</h3>
-                <p>A site showing list of movie trailers using Python.</p>
-                <p><a href="https://github.com/annemarie-garcia/udacity_movie_trailer_website">https://github.com/annemarie-garcia/udacity_movie_trailer_website</a></p>
-              </div>
-              <div class="col-md-4">
-                <a href="#" class="thumbnail"><img src="https://unsplash.it/555/300" ></a>
-                <h3>Coming soon...</h3>
-              </div>
-              <div class="col-md-4">
-                <a href="#" class="thumbnail"><img src="https://unsplash.it/555/300" ></a>
-                <h3>Coming soon...</h3>
-              </div>
-            </div>
+                <div class="col-sm-12">
 
+                    <p>I’m Anne-Marie, based In Reading, UK. I’m currently studying a Full Stack Web Developer Nanodegree at Udacity.</p>
+                    <p>I’m looking for new work opportunities based in Berkshire and Thames Valley.</p>
+
+                    <!--
+                        TODO Add another page detailing my exact skillset
+                        <button class="btn btn-default" type="submit">More About Me</button>
+                    -->
+            </div>
+            </div>
         </div>
 
+            <div class="container featured">
+             <div class="row">
+                    <div class="col-md-12" id="featured">
+                      <h3>Featured Work</h3>
+                    </div>
+                </div>
+
+                <div class="row featured-work">
+                 <div class="col-md-4 item">
+                    <a href="#" class="thumbnail"><img src="dist/images/gibraltar-main-street-400.jpg" data-toggle="modal" data-target="#project1"></a>
+                    <h4>Movie Trailer</h4>
+                    <p>A list of movie trailers using Python.</p>
+                    <p><a href="https://github.com/annemarie-garcia/udacity_movie_trailer_website">View in Github</a></p>
+                  </div>
+
+                  <div class="col-md-4 item">
+                    <a href="#" class="thumbnail"><img src="dist/images/graffitti_guitar-400.jpg" ></a>
+                    <h4>Appify</h4>
+                    <p>Coming soon...</p>
+                  </div>
+                  <!--
+                  <div class="col-md-4 item">
+                   <a href="#" class="thumbnail"><img src="dist/images/butterfly-400.jpg" ></a>
+
+                    <h4>Sunflower</h4>
+                    <p>Coming soon...</p>
+                  </div>
+                </div>-->
+                </div>
+            </div>
+
+<!--
         <footer>
           <div class="container">
             <div class="row">
-                  <div class="col-md-12">
-                      <h2>Contact Me</h2>
+                  <div class="col-md-12" id="contact">
+                      <h3>Contact Me</h3>
                   </div>
                   <div class="col-md-4">
-                    <p><a mailto="annemarieg213@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a></p>
+                    <p><a mailto="annemarieg213@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><br/>
+                    Email</a></p>
+
                   </div>
                   <div class="col-md-4">
-                      <p><a href="https://uk.linkedin.com/in/annemarie-garcia"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></p>
+                      <p><a href="https://uk.linkedin.com/in/annemarie-garcia"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i><br/>
+                      Linked In</a></p>
                   </div>
                   <div class="col-md-4">
-                      <p><a href="https://github.com/annemarie-garcia/"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></p>
+                      <p><a href="https://github.com/annemarie-garcia/"><i class="fa fa-github fa-3x" aria-hidden="true"></i><br/>
+                      GitHub</a></p>
                   </div>
               </div>
             </div>
           </footer>
+-->
 
 
 
-
-         <!-- Modal -->
+         <!-- Modal
         <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -105,13 +142,11 @@
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
+                -->
             </div>
         </div>
-        <footer class="row">
 
-        </footer>
+        <script type="text/javascript" src="dist/js/production.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>
