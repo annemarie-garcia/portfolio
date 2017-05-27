@@ -1,0 +1,156 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Anne-Marie Garcia - Portfolio</title>
+
+        <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="src/css/main.css">
+        <link rel="stylesheet" type="text/css" href="src/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
+    </head>
+
+    <body>
+        <header class="container">
+
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#featured">Featured Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 logo">
+                     <a href="index.htm"><img src="src/images/logo-final.jpg" class="img-responsive"></a>
+                </div>
+                <div class="col-xs-10 text-right">
+                  <h1>Anne-Marie Garcia</h1>
+                  <p>Front-End Developer</p>
+                </div>
+            </div>
+
+
+        </header>
+
+        <div class="container-fluid hero">
+            <div class="row">
+                <img src="dist/images/amg-main-350.jpg"  alt="Profile of Anne-Marie Garcia">
+
+                <img src="dist/images/gibraltar-main-street-350.jpg" srcset="dist/images/gibraltar-main-street-350.jpg 500w, dist/images/gibraltar-main-street-600.jpg 00w, dist/images/gibraltar-main-street-800.jpg 800w" data-toggle="modal" data-target="#project1" alt="Profile of Anne-Marie Garcia">
+
+            </div>
+        </div>
+        <div class="container intro">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <p>I’m Anne-Marie, based In Reading, UK. I’m currently studying a Full Stack Web Developer Nanodegree at Udacity.</p>
+                    <p>I’m looking for new work opportunities based in Berkshire and Thames Valley.</p>
+
+                    <!--
+                        TODO Add another page detailing more about me and my exact skillset
+                        <button class="btn btn-default" type="submit">More About Me</button>
+                    -->
+
+                </div>
+            </div>
+        </div>
+
+        <section class="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                      <h3>Featured Work</h3>
+                    </div>
+                </div>
+
+                <div class="row featured-work">
+                    <div class="col-sm-4">
+                        <div class="item">
+
+                            <a href="#" class=""><img src="dist/images/gibraltar-main-street-350.jpg" srcset="dist/images/gibraltar-main-street-350.jpg 500w, dist/images/gibraltar-main-street-600.jpg 00w, dist/images/gibraltar-main-street-800.jpg 800w" data-toggle="modal" data-target="#project1" alt="Street with red postbox"></a>
+                            <h4>Movie Trailer</h4>
+                            <p>A list of movie trailers using Python.</p>
+                            <p><a href="https://github.com/annemarie-garcia/udacity_movie_trailer_website">View in Github</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="item">
+                            <img src="dist/images/graffitti_guitar-350.jpg" >
+                            <h4>Appify</h4>
+                            <p>Coming soon...</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="item">
+                            <img src="dist/images/butterfly-350.jpg" >
+                            <h4>Sunflower</h4>
+                            <p>Coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="row" id="contact">
+                  <div class="col-md-12">
+                      <h3>Contact Me</h3>
+                  </div>
+                  <div class="col-xs-4">
+                    <p><a mailto="annemarieg213@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><br/>
+                    Email</a></p>
+
+                  </div>
+                  <div class="col-xs-4">
+                      <p><a href="https://uk.linkedin.com/in/annemarie-garcia"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i><br/>
+                      Linked In</a></p>
+                  </div>
+                  <div class="col-xs-4">
+                      <p><a href="https://github.com/annemarie-garcia/"><i class="fa fa-github fa-3x" aria-hidden="true"></i><br/>
+                      GitHub</a></p>
+                  </div>
+              </div>
+            </div>
+          </footer>
+
+         <!-- Modal
+        <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/555.jpeg">
+                        This was my first project in this class. I learned a lot about HTML and CSS.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>-->
+        <script type="text/javascript" src="dist/js/production.js"></script>
+    </body>
+</html>

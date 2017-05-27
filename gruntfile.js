@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
     grunt.initConfig({
         concat: {
@@ -21,6 +22,9 @@ module.exports = function(grunt) {
                             width: 400
                         },{
                             width: 800
+                        },
+                        {
+                            width: 1600
                         }]
                     },
                     files: [{
